@@ -8,8 +8,7 @@ def My_Model(input_shape=(7)):
     """
     model = tf.keras.Sequential()
     model.add(tf.keras.Input(input_shape))
-    model.add(tf.keras.layers.Dense(units=20, activation='sigmoid'))
-    model.add(tf.keras.layers.Dense(units=20, activation='sigmoid'))
-    model.add(tf.keras.layers.Dense(units=1))
+    model.add(tf.keras.layers.Dense(units=32, activation='tanh'))
+    model.add(tf.keras.layers.Dense(units=1, activation='sigmoid'))
     
     return model
